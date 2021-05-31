@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>URL Shortener</title>
+	<link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body class="container">
+	<img alt="linkImage" id='image'src="images/Link_chain.png" width="auto" height="200" />
+	<div>
+		<h1> <b>Welcome to your URL shortener! </b></h1>
+	</div>
+	<!--form area-->
+    <div>
+		<label for="old_link">Enter your long link</label>
+		<input type="url" id="input"/>
+	</div>
+	<button type="button" onclick="makeShort()">Create short URL</button> 
+
+	<!--result area-->
+	<div class="result">
+		<div class="result-container">
+			<p><strong>Short URL : </strong><span id="my-result"></span></p>
+
+	<!-- The button used to copy the text -->
+	<button type="button" onclick="copy()" id="copy">Copy Link</button>
+
+	</div>
+
+	<script src="main.js"></script>
+
+</body>
+
+</html>
